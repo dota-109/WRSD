@@ -4,9 +4,9 @@ from NETWORK import Model
 import torch.backends.cudnn as cudnn
 from progress_bar import progress_bar
 from math import log10
-from tensorboardX import SummaryWriter
+# from tensorboardX import SummaryWriter
 import matplotlib.pyplot as plt
-from utils import KL, compute_ssim
+from utils import compute_ssim
 import cv2
 import os
 from torch.utils.data import DataLoader
@@ -65,8 +65,8 @@ def main():
         print('===> Loading datasets')
         for i in range(180):
             print('='*5+'This is the '+str(i+1)+'th image' )
-            testDir = '/home/ubuntu/ADAXI/Data_Set/Aerial/PNG_clip/' + str(pae) + '/' + str(i) + '/'
-            testLabelDir = '/home/ubuntu/ADAXI/Data_Set/Aerial/PNG_clip/gray/' + str(i) + '/'
+            testDir = './DataSets/Aerial/PNG_clip/' + str(pae) + '/' + str(i) + '/'
+            testLabelDir = './DataSets/Aerial/PNG_clip/gray/' + str(i) + '/'
 
             test_set = DataSetFromFolder(image_dir=testDir, target_dir=testLabelDir, if_test=True,pae=pae)
             testing_data_loader = DataLoader(dataset=test_set, batch_size=1, shuffle=False)
