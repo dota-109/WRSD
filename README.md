@@ -7,6 +7,7 @@
 * numpy
 * matplotlib
 * cv2 >= 3.x.x 
+* pillow
 
 ## Code
 Clone this repository into any place you want.
