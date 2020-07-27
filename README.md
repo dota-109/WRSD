@@ -17,9 +17,14 @@ cd WRSD
 
 ## Datasets
 You can download test datasets from:
+### Baidu Pan
 ```
 https://pan.baidu.com/s/1TIGEeh11Ok9P3ziE5Sm7rw
 code: 9bc8
+```
+### Google Drive
+```
+https://drive.google.com/file/d/1aGDeMYPa91PCgZqE4D6fK3pOkHjPjdar/view?usp=sharing
 ```
 
 ## Usage
