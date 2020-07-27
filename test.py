@@ -67,8 +67,8 @@ def main():
         for i in range(2,11):
             pae = i
             print('PAE is: '+str(pae))
-            testDir = './DataSet/'+dataset_name+'/'
-            testLabelDir = './DataSet/'+dataset_name+'/gray/'          
+            testDir = './DataSets/'+dataset_name+'/'
+            testLabelDir = './DataSets/'+dataset_name+'/gray/'          
 
             test_set = DataSetFromFolder(image_dir=testDir, target_dir=testLabelDir, if_test=True, pae=pae)
 
