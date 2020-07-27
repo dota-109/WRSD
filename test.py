@@ -4,9 +4,9 @@ from NETWORK import Model
 import torch.backends.cudnn as cudnn
 from progress_bar import progress_bar
 from math import log10
-from tensorboardX import SummaryWriter
+# from tensorboardX import SummaryWriter
 import matplotlib.pyplot as plt
-from utils import KL, compute_ssim
+from utils import compute_ssim
 import cv2
 import os
 import time
@@ -51,8 +51,6 @@ def test(path, testing_loader, pae):
             target = np.reshape(target,(target.shape[2],target.shape[3]))
             ssim = compute_ssim(prediction, target)
             avg_ssim += ssim
-            # print(str(i) + ' psnr:' + str(psnr) + ' ssim: ' + str(ssim))
-            # cv2.imwrite('./test_result/epoch5/test{}.png'.format(i),prediction)
             i += 1
     print("  The pae is: {}".format(pae))
     print("  Average PSNR: {:.2f} dB".format(avg_psnr / len(testing_loader)))
@@ -63,15 +61,14 @@ def test(path, testing_loader, pae):
 def main():
 # Set5 Set14 BSD100 Kodim
     dataset_names = ['Set5', 'Set14', 'BSD100', 'Kodim']
-    dataset_names = ['LIVE1']
-    # dataset_names = ['Kodim']
+    # dataset_names = ['LIVE1']
     for dataset_name in dataset_names:
         print('===> Loading datasets: '+dataset_name)
-        for i in range(6,11,2):
+        for i in range(2,11):
             pae = i
             print('PAE is: '+str(pae))
-            testDir = '/home/ubuntu/ADAXI/Data_Set/'+dataset_name+'/'
-            testLabelDir = '/home/ubuntu/ADAXI/Data_Set/'+dataset_name+'/gray/'          
+            testDir = './DataSet/'+dataset_name+'/'
+            testLabelDir = './DataSet/'+dataset_name+'/gray/'          
 
             test_set = DataSetFromFolder(image_dir=testDir, target_dir=testLabelDir, if_test=True, pae=pae)
 
