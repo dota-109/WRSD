@@ -5,7 +5,6 @@ import cv2
 import copy
 from torchvision import transforms
 import numpy as np
-from PIL import Image
 import random
 import torchvision.transforms.functional as tf
 class DataSetFromFolder(data.Dataset):
