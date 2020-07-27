@@ -22,16 +22,16 @@ parser.add_argument('--seed', type=int,
 	default=123, help='random seed to use. Default=123')
 
 parser.add_argument('--imageDir', type=str, 
-	default='./DataSets/DIV2K_clip_128/PNG/')
+	default='./DataSets/DIV2K_clip_128/PNG/', help='train data dir path')
 
 parser.add_argument('--targetDir', type=str, 
-	default='./DataSets/DIV2K_clip_128/PNG/gray/')
+	default='./DataSets/DIV2K_clip_128/PNG/gray/', help='train label dir path')
 
 parser.add_argument('--testDir', type=str, 
-	default='./DataSets/Set14/')
+	default='./DataSets/Set14/', help='test data dir path')
 
 parser.add_argument('--testLabelDir', type=str, 
-	default='./DataSets/Set14/gray/')
+	default='./DataSets/Set14/gray/', help='test label dir path')
 
 
 args = parser.parse_args()
