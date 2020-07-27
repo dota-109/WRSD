@@ -2,6 +2,7 @@ import torch.utils.data as data
 from os import listdir
 from os.path import join
 import cv2
+from PIL import Image
 import copy
 from torchvision import transforms
 import numpy as np
