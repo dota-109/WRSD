@@ -18,8 +18,8 @@ cd WRSD
 ## Datasets
 You can download test datasets from:
 ```
-https://pan.baidu.com/s/1rY0lwLHcoXfueXo6EWg3hQ
-code: c6jd
+https://pan.baidu.com/s/1TIGEeh11Ok9P3ziE5Sm7rw
+code: 9bc8
 ```
 
 ## Usage
