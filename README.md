@@ -55,6 +55,6 @@ python main.py --batchSize 16 --nEpochs 100
 ## Result
 From left to right are calic and wrsd
 <p>
-  <img src='result/woman_calic.png' height='500' width='500'/>
-  <img src='result/woman_wrsd.png' height='500' width='500'/>
+  <img src='result/woman_calic.png' height='400' width='400'/>
+  <img src='result/woman_wrsd.png' height='400' width='400'/>
 </p>
