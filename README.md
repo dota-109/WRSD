@@ -1,5 +1,5 @@
 # WRSD
-This repository is an official PyTorch implementation of the paper **"CALIC Soft Decoding Using Hard Constrained Wide-activated Recurrent Residual Networks."**
+This repository is an official PyTorch implementation of the paper **"CALIC Soft Decoding Using Hard Constrained Wide-activated Recurrent Residual Network."**
 
 ## Dependencies
 * Python 3.6
