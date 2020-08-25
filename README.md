@@ -53,6 +53,10 @@ An example of training usage is shown as follows:
 ```
 python main.py --batchSize 16 --nEpochs 100
 ```
+### Testing
+```
+python test.py
+```
 ## Result
 From left to right are calic and wrsd
 <p>
